@@ -12,6 +12,8 @@
 		2D1853381C7F5FF700DB5D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1853361C7F5FF700DB5D80 /* Main.storyboard */; };
 		2D18533A1C7F5FF700DB5D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1853391C7F5FF700DB5D80 /* Assets.xcassets */; };
 		2D18533D1C7F5FF800DB5D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D18533B1C7F5FF800DB5D80 /* LaunchScreen.storyboard */; };
+		2D46A1D01C7F9C66006C695A /* flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D46A1CF1C7F9C66006C695A /* flights.json */; };
+		2D46A1D21C7F9CD3006C695A /* JSONGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46A1D11C7F9CD3006C695A /* JSONGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2D1853391C7F5FF700DB5D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D18533C1C7F5FF800DB5D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D18533E1C7F5FF800DB5D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D46A1CF1C7F9C66006C695A /* flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flights.json; sourceTree = "<group>"; };
+		2D46A1D11C7F9CD3006C695A /* JSONGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		2D1853311C7F5FF700DB5D80 /* SearchFlights */ = {
 			isa = PBXGroup;
 			children = (
-				2D1853321C7F5FF700DB5D80 /* AppDelegate.swift */,
-				2D1853341C7F5FF700DB5D80 /* ViewController.swift */,
 				2D1853361C7F5FF700DB5D80 /* Main.storyboard */,
+				2D1853341C7F5FF700DB5D80 /* ViewController.swift */,
+				2D46A1D11C7F9CD3006C695A /* JSONGetter.swift */,
+				2D46A1CE1C7F9C44006C695A /* Support Files */,
+			);
+			path = SearchFlights;
+			sourceTree = "<group>";
+		};
+		2D46A1CE1C7F9C44006C695A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D46A1CF1C7F9C66006C695A /* flights.json */,
 				2D1853391C7F5FF700DB5D80 /* Assets.xcassets */,
 				2D18533B1C7F5FF800DB5D80 /* LaunchScreen.storyboard */,
 				2D18533E1C7F5FF800DB5D80 /* Info.plist */,
+				2D1853321C7F5FF700DB5D80 /* AppDelegate.swift */,
 			);
-			path = SearchFlights;
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D18533D1C7F5FF800DB5D80 /* LaunchScreen.storyboard in Resources */,
+				2D46A1D01C7F9C66006C695A /* flights.json in Resources */,
 				2D18533A1C7F5FF700DB5D80 /* Assets.xcassets in Resources */,
 				2D1853381C7F5FF700DB5D80 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1853351C7F5FF700DB5D80 /* ViewController.swift in Sources */,
+				2D46A1D21C7F9CD3006C695A /* JSONGetter.swift in Sources */,
 				2D1853331C7F5FF700DB5D80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				2D1853431C7F5FF800DB5D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
